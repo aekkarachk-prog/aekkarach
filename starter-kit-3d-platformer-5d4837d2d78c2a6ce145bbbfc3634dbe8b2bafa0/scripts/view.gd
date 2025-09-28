@@ -32,7 +32,7 @@ func _physics_process(delta):
 	camera.position = camera.position.lerp(Vector3(0, 0, zoom), 8 * delta)
 	
 	handle_input(delta)
-
+	
 # Handle input
 
 func handle_input(delta):

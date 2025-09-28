@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://b5y2du8lkusjb"]
+
+[ext_resource type="PackedScene" uid="uid://cv7eomr64pnw8" path="res://models/inlaid_syrian_table.glb" id="1_5su10"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_5su10"]
+size = Vector3(1.21564, 1.32922, 1.0703)
+
+[node name="Sketchfab_Scene" instance=ExtResource("1_5su10")]
+
+[node name="Sketchfab_model" parent="." index="0"]
+transform = Transform3D(1.13, 0, 0, 0, -4.93939e-08, 1.13, 0, -1.13, -4.93939e-08, 0, -0.168214, 0)
+
+[node name="platform2#StaticBody3D3" type="StaticBody3D" parent="Sketchfab_model" index="1"]
+transform = Transform3D(1, 0, 0, 0, 2.22045e-16, -1, 0, 1, 2.22045e-16, 0, 0, 0)
+
+[node name="platform2_StaticBody3D#CollisionShape3D" type="CollisionShape3D" parent="Sketchfab_model/platform2#StaticBody3D3" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.100998, 1.33661, -0.0614298)
+shape = SubResource("BoxShape3D_5su10")

@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://w6vuqv6hale2"]
+
+[ext_resource type="PackedScene" uid="uid://d2h61opp482h1" path="res://models/Textures/lowpoly_wooden_table__game_asset.glb" id="1_dynd2"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_6u06t"]
+size = Vector3(7.3951, 0.676529, 11.1158)
+
+[node name="Sketchfab_Scene" instance=ExtResource("1_dynd2")]
+
+[node name="Sketchfab_model" parent="." index="0"]
+transform = Transform3D(0.325, 0, 0, 0, -1.42062e-08, 0.325, 0, -0.325, -1.42062e-08, 0, 0, 0)
+
+[node name="platform2#StaticBody3D3" type="StaticBody3D" parent="Sketchfab_model" index="1"]
+transform = Transform3D(1, 0, 0, 0, 2.22045e-16, -1, 0, 1, 2.22045e-16, 0, 7.65748e-16, 3.44862)
+
+[node name="platform2_StaticBody3D#CollisionShape3D" type="CollisionShape3D" parent="Sketchfab_model/platform2#StaticBody3D3" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.127153, 0.469807, -0.284558)
+shape = SubResource("BoxShape3D_6u06t")
