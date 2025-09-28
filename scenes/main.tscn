@@ -1,4 +1,4 @@
-[gd_scene load_steps=23 format=3 uid="uid://bqqgyqafm7xwp"]
+[gd_scene load_steps=24 format=3 uid="uid://bqqgyqafm7xwp"]
 
 [ext_resource type="Environment" uid="uid://bqnqgflivjvue" path="res://scenes/main-environment.tres" id="1_ahusb"]
 [ext_resource type="Script" uid="uid://djpme521r3cxe" path="res://scripts/main.gd" id="1_jkv2x"]
@@ -21,6 +21,7 @@
 [ext_resource type="FontFile" uid="uid://d0cxd77jybrcn" path="res://fonts/lilita_one_regular.ttf" id="17_tk810"]
 [ext_resource type="PackedScene" uid="uid://w6vuqv6hale2" path="res://scenes/sketchfab_scene5.tscn" id="17_yc10j"]
 [ext_resource type="FontFile" uid="uid://ccqhg62w6cke1" path="res://Sarabun-Bold.ttf" id="19_0ld40"]
+[ext_resource type="AudioStream" uid="uid://divommsgoynou" path="res://models/Textures/Park Bird - Are You Lost - powah - SoundLoadMate.com.mp3" id="22_jscy8"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_38ys3"]
 font = ExtResource("17_tk810")
@@ -272,5 +273,16 @@ theme_override_fonts/font = ExtResource("19_0ld40")
 text = "กดปุ่มลูกศรหมุนกล้อง
 กด Spacebar สองครั้งกระโดด
 สองรอบ"
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("22_jscy8")
+volume_db = -15.928
+autoplay = true
+
+[node name="Label3D" type="Label3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.93366, 4.36893, -33.1914)
+text = "What Now
+What Should I Do?
+Close Your Eyes Listen Music."
 
 [connection signal="coin_collected" from="Player" to="HUD" method="_on_coin_collected"]

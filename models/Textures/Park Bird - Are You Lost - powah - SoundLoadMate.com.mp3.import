@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://divommsgoynou"
+path="res://.godot/imported/Park Bird - Are You Lost - powah - SoundLoadMate.com.mp3-dd2c7747a186c5f82bb69ab655dcb8f7.mp3str"
+
+[deps]
+
+source_file="res://models/Textures/Park Bird - Are You Lost - powah - SoundLoadMate.com.mp3"
+dest_files=["res://.godot/imported/Park Bird - Are You Lost - powah - SoundLoadMate.com.mp3-dd2c7747a186c5f82bb69ab655dcb8f7.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
