@@ -1,6 +1,6 @@
 [gd_scene load_steps=15 format=3 uid="uid://cnv210lnfdoan"]
 
-[ext_resource type="Script" path="res://interactable objects/doors/door_object.gd" id="1_6re5x"]
+[ext_resource type="Script" uid="uid://cp66hedt1t3at" path="res://interactable objects/doors/door_object.gd" id="1_6re5x"]
 [ext_resource type="Material" uid="uid://cgoha54aqf2sv" path="res://demo_level/world_materials/wood01.tres" id="2_3rd0r"]
 [ext_resource type="AudioStream" uid="uid://dmbreupif03hc" path="res://audio/SoundFX/creak/creak_4.wav" id="2_sslvw"]
 [ext_resource type="AudioStream" uid="uid://twq1ywacwc88" path="res://audio/SoundFX/hit/hit_blunt_04.wav" id="3_4d5yu"]
@@ -143,10 +143,10 @@ tracks/2/keys = {
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_bq3vk"]
 _data = {
-"Locked": SubResource("Animation_dtdft"),
-"OpenLeft": SubResource("Animation_iix6c"),
-"OpenRight": SubResource("Animation_iqmqg"),
-"RESET": SubResource("Animation_ntsht")
+&"Locked": SubResource("Animation_dtdft"),
+&"OpenLeft": SubResource("Animation_iix6c"),
+&"OpenRight": SubResource("Animation_iqmqg"),
+&"RESET": SubResource("Animation_ntsht")
 }
 
 [node name="DoorObject" type="StaticBody3D" groups=["Interactable"]]

@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://b65t1v7qe0rb3"]
 
-[ext_resource type="Script" path="res://cameras/follow_cam/follow_cam_3d.gd" id="1_y42mi"]
+[ext_resource type="Script" uid="uid://cmonnwdgbojvu" path="res://cameras/follow_cam/follow_cam_3d.gd" id="1_y42mi"]
 
 [node name="FollowCam" type="SpringArm3D" node_paths=PackedStringArray("camera_3d")]
 top_level = true

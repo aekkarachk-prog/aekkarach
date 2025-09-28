@@ -1,6 +1,6 @@
 [gd_scene load_steps=14 format=3 uid="uid://bp5aql2ip2qwi"]
 
-[ext_resource type="Script" path="res://interactable objects/doors/gate_object.gd" id="1_jmheh"]
+[ext_resource type="Script" uid="uid://4drpmiki3myr" path="res://interactable objects/doors/gate_object.gd" id="1_jmheh"]
 [ext_resource type="Material" uid="uid://yduwfgw1haxq" path="res://assets/metal_black.tres" id="2_1tfmp"]
 [ext_resource type="AudioStream" uid="uid://bf1mydqcmopue" path="res://audio/SoundFX/ratchet/ratchet_1.wav" id="2_4mohy"]
 [ext_resource type="AudioStream" uid="uid://b7mejiv87ktbl" path="res://audio/SoundFX/clack/clack_1.wav" id="3_0j2dh"]
@@ -168,9 +168,9 @@ tracks/4/keys = {
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_b5b81"]
 _data = {
-"Locked": SubResource("Animation_atpco"),
-"Open": SubResource("Animation_4eqcm"),
-"RESET": SubResource("Animation_4xpfs")
+&"Locked": SubResource("Animation_atpco"),
+&"Open": SubResource("Animation_4eqcm"),
+&"RESET": SubResource("Animation_4xpfs")
 }
 
 [node name="GateObject" type="StaticBody3D"]
